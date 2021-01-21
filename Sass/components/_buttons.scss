@@ -1,0 +1,40 @@
+/*BEM
+
+Block__Elements--Modifier
+
+Block--Modifier
+
+<button>
+    <i class="button__icon"></i>
+    <span class="button__text"> text </span>
+</button>
+
+*/
+
+
+
+.button {
+    color: $color-text;
+    padding: $spacer;
+
+    font-size: 1rem;
+    line-height: 0.5rem;
+
+    .button__icon {
+
+    }
+
+    .button__text {
+
+    }
+}
+
+.button--chat-launcher {
+    min-width: 82px;
+    max-width: 82px;
+    min-height: 82px;
+    max-height: 82px;
+    background-color: $color--third;
+    border-radius: 50%;
+    border: none;
+}

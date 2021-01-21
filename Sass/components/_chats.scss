@@ -1,0 +1,26 @@
+.chat {
+    background-color: $lightest-color;
+    border-radius: 16px;
+    flex: 1;
+    margin-bottom: 32px;
+}
+
+.chat-container {
+    background-color: darken($color--primary, 20%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include media(desktop-s) {
+        width: 535px;
+        height: calc(100vh - 20%);
+        bottom: 48px;
+        right: 48px;
+    }
+}

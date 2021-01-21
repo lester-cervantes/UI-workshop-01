@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: $color--secondary;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section {
+    background-color: $lightest-color;
+    border-radius: 16px;
+    width: 90%;
+    margin: 80px 96px;
+    position: relative;
+    padding: 32px;
+
+    &.section--main {
+        color: red;
+        flex: 1 1 auto;
+    }
+}
+
+footer {
+    min-width: 100%;
+    width: 100%;
+    min-height: 200px;
+    height: 200px;
+    background-color: darken($color--primary, 5%);
+}
