@@ -21,6 +21,63 @@
         background-color: $lightest-color;
         padding: 32px;
         width: 100%;
+
+        .chat__message-bubble {            
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 32px;
+
+            .chat__avatar {                              
+                flex-direction: row;
+                border-radius: 50%;              
+                width: 32px;
+                height: 32px;
+                min-width: 32px;
+                min-height: 32px;
+                max-width: 32px;
+                max-height: 32px;
+                margin-right: 24px;
+                background-image: url(assets/img/Bot.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+            .chat__content {
+                flex-direction: column;
+                align-items: flex-end;
+                display: flex;
+                width: 100%;
+
+                .chat__title {
+                    width: 100%;
+                    font-weight: bold;
+                }
+                .chat__message {
+                    width: 100%;
+                    background-color: $color--fifth;
+                    padding: 24px;
+                }
+                .chat__time {
+                    
+                }
+            }
+            
+            &.chat__message-bubble--from-user {
+                border-left: 3px solid $color--third;
+                background-color: $color--sixth;
+                margin: 0 -32px;
+                padding: 32px;
+
+                .chat__avatar {
+                    border: 3px solid $color--third;
+                    background-image: url(assets/img/User.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
     }
     .chat__footer {
         height: 82px;
