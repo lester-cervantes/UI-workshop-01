@@ -8,11 +8,36 @@
     <link rel="stylesheet" href="css/my-theme.css">
   </head>
   <body>
+      <navbar class="navbar navbar--main"></navbar>
     <div class="chat-container">
-      <div class="chat"></div>
+        <div class="chat">
+          <div class="chat__header">
+            <div class="chat__avatar"></div>
+            <div class="chat__title"></div>
+            <button class="button chat__button-close"></button>
+          </div>
+          <div class="chat__body">
+            <div class="chat__message-bubble">
+              <div class="chat__avatar"></div>
+              <div class="chat__content">
+                <div class="chat__title">{Chatbot.name}</div>
+                <div class="chat__message">This is a long message written by the virtual assistant of SUMADI. This is a long message written by the virtual assistant of SUMADI.</div>
+                <div class="chat__time">10:21 am</div>
+              </div>
+            </div>
+            <div class="chat__message-bubble chat__message-bubble--from-user">
+              <div class="chat__avatar"></div>
+              <div class="chat__content">
+                <div class="chat__title">You</div>
+                <div class="chat__message">This is my message...</div>
+                <div class="chat__time">10:22 am</div>
+              </div>
+            </div>
+          </div>
+          <div class="chat__footer"></div>
+        </div>
       <button class="button button--chat-launcher"></button>
     </div>
-    <navbar class="navbar navbar--main"></navbar>
     <section class="section section--main">
       <button class="button">text</button>
     </section>

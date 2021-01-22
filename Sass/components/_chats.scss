@@ -2,7 +2,34 @@
     background-color: $lightest-color;
     border-radius: 16px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 32px;
+
+    .chat__header {
+        height: 82px;
+        width: 100%;
+        background-color: $color--fourth;
+        border-radius: 16px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .chat__body {
+        background-color: $lightest-color;
+        padding: 32px;
+        width: 100%;
+    }
+    .chat__footer {
+        height: 82px;
+        width: 100%;
+        background-color: darken($lightest-color, 15%);
+        border: 1px solid $color--fifth;
+        border-radius: 0 0 16px 10px;
+        box-shadow: 0 -3px 7px 0 rgba($darkest-color, 0.05);
+    }
 }
 
 .chat-container {
